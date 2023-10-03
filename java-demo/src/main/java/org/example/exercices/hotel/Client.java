@@ -19,6 +19,11 @@ public class Client {
         return id;
     }
 
+    @Override
+    public String toString() {
+        return "Client numéro=" + id + ", nom=" + nom + ", prenom=" + prenom + ", telephone=" + telephone + "]";
+    }
+
     public String getNom() {
         return nom;
     }

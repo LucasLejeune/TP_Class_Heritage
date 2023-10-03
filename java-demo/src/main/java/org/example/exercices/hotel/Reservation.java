@@ -15,6 +15,12 @@ public class Reservation {
         this.listeChambres = listeChambres;
     }
 
+    @Override
+    public String toString() {
+        return "Reservation numero" + id + ", status=" + status + ", liste des Chambres=" + listeChambres + ", client="
+                + client + "]";
+    }
+
     public int getId() {
         return id;
     }

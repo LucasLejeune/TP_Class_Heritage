@@ -1,10 +1,8 @@
 package org.example;
 
 import org.example.array.Array;
-import org.example.exercices.Exo1;
-import org.example.exercices.Exo2;
-import org.example.exercices.Exo3;
-import org.example.exercices.ExoString;
+import org.example.exercices.*;
+import org.example.generique.Boite;
 import org.example.operator.Operator;
 import org.example.poo.Phone;
 import org.example.poo.Product;

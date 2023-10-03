@@ -17,6 +17,12 @@ public class Hotel {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Hotel " + nom + ", liste des Clients=" + listeClients + ", liste des Chambres=" + listeChambres
+                + ", liste des Reservation=" + listeReservation + "]";
+    }
+
     public ArrayList<Chambre> getListeChambres() {
         return listeChambres;
     }

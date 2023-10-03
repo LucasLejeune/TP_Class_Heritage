@@ -17,6 +17,13 @@ public class Chambre {
         this.tarif = tarif;
     }
 
+    @Override
+    public String toString() {
+        return "Chambre numero=" + numero + ", disponible=" + disponible + ", nombre de lits=" + nb_lits + ", tarif="
+                + tarif
+                + ".";
+    }
+
     public String getNumero() {
         return numero;
     }
