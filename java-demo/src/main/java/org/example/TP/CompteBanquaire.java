@@ -12,8 +12,12 @@ public class CompteBanquaire {
     }
 
     public void retirerArgent(float somme) {
-        this.solde -= somme;
-        System.out.println("Votre solde est maintenant de: " + this.solde);
+        if (this.solde <= somme) {
+            this.solde -= somme;
+            System.out.println("Votre solde est maintenant de: " + this.solde);
+        } else {
+            System.out.println("nuh uh 😒");
+        }
     }
 
     public void deposerArgent(float somme) {

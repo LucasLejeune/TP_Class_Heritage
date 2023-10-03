@@ -1,9 +1,7 @@
 package org.example;
 
-enum DayWeek {
-    LUNDI,
-    MARDI,
-    MERCREDI,
+public enum DayWeek {
     JEUDI,
-    VENDREDI
+    VENDREDI,
+    SAMEDI
 }
