@@ -14,6 +14,11 @@ import org.example.string.ChaineCaractere;
 import org.example.structure.Structure;
 import org.example.structure.Structure2;
 import org.example.variable.Variable;
+import org.example.generique.Boite;
+import org.example.generique.Hangar;
+import org.example.TP.Vehicule;
+import org.example.TP.Voiture;
+import org.example.TP.Moto;
 
 import java.util.concurrent.Callable;
 
@@ -64,17 +69,33 @@ public class Main {
     user.setName("Thomas");
     User user1 = new User("Michel");
     User user2 = new User("Tom");
-    System.out.println(user);
-    System.out.println(user1);
-    System.out.println(user2);
+    // System.out.println(user);
+    // System.out.println(user1);
+    // System.out.println(user2);
 
-    enum JourSemaine {
-      LUNDI, MARDI, MERCREDI
-    }
+    // enum JourSemaine {
+    // LUNDI, MARDI, MERCREDI
+    // }
 
-    JourSemaine today = JourSemaine.LUNDI;
+    // JourSemaine today = JourSemaine.LUNDI;
 
-    DayWeek tomorrow = DayWeek.MARDI;
+    DayWeek tomorrow = DayWeek.JEUDI;
+
+    Boite<String> stringBoite = new Boite<String>("TOTO");
+    Boite<User> userBoite = new Boite<User>(user1);
+
+    // System.out.println(stringBoite.getContenu());
+    // System.out.println(userBoite.getContenu());
+
+    Moto moto = new Moto();
+    Voiture voiture = new Voiture();
+
+    Hangar<Vehicule> hangar = new Hangar<Vehicule>();
+
+    hangar.addElement(voiture);
+    hangar.addElement(moto);
+
+    System.out.println(hangar.getAll());
 
   }
 }
