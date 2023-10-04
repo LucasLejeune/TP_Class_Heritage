@@ -29,7 +29,7 @@ public class Main {
             System.out.println("Quel est le numéro de téléphone du client:");
             String telephoneClient = myObj.nextLine();
 
-            Client client = new Client(nomClient, prenomClient, telephoneClient);
+            Client client = hotel.getClient(nomClient, prenomClient, telephoneClient);
 
             hotel.addClient(client);
 

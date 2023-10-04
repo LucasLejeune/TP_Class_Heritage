@@ -23,6 +23,16 @@ public class Hotel {
                 + ", liste des Reservation=" + listeReservation + "]";
     }
 
+    public Client getClient(String nom, String prenom, String telephone) {
+        for (Client client : listeClients) {
+            if (client.getNom().equals(nom) && client.getPrenom().equals(prenom)
+                    && client.getTelephone().equals(telephone)) {
+                return client;
+            }
+        }
+        return new Client(nom, prenom, telephone);
+    }
+
     public ArrayList<Chambre> getListeChambres() {
         return listeChambres;
     }
